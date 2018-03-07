@@ -24,37 +24,42 @@
 
 @media screen and (max-width: 640px) and (min-width: 0px){
 
+    html{
+    width: fit-content; 
+    box-sizing: border-box; 
+
+    }
+
     .wrapper{
     min-width: 0px;
     width: 100%;  
     margin: 6px;
-    padding: 70px; 
 }
 
 	header {
 	height: auto;
-	position: static; 
+    position: static;
+    width: auto;  
 
     }
 	#main-block {
         margin: 0 auto; 
-        width: 100%;
-        display: block; 
+        width: auto;
+        float: none;
         height: auto; 
+        max-width: 367px;   
 	}
 
 	aside {
-        width: 100%;
-        display: block; 
-        margin: 0;
-        Height: auto; 
+		width: auto;
+		float: none;
+		margin: 0;
     }
 }
 
 * {
-    box-sizing: border-box;
-  }
-
+  box-sizing: border-box;
+}
 body
 {
  /*The background pattern used was found on Subtle Patterns. 
@@ -134,7 +139,6 @@ nav a {
 .main-title{
     display: block; 
     float: left; 
-
 }
 .main-text{
 
@@ -149,7 +153,8 @@ aside{
     width: 270px;
     background-color: #ffffff transparent;
     float: right; 
-    margin: 10px 0 0 0 ;  
+    margin: 10px 0 0 0;
+    height: 300px; 
     
 /* The sidebar is 270px wide. */
 }
@@ -163,6 +168,7 @@ footer
     font-size: 10px;
     text-align: center;
     border-top: #4aaaa5 solid 5px;  
+    margin: 0 auto; 
 
 }
 
@@ -178,12 +184,11 @@ background-color: #ffffff;
 
 .sidebar-heading
 
-h1,
-h2,
-h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  color: #4aaaa5;
+h1, h2, h3
+{
+color: #4aaaa5;
+font-family: 'Georgia', Times, Times New Roman, serif;
+/*For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.*/
 }
 h2, h3{
     font-size: 24px;
